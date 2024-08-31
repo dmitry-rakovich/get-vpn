@@ -1,0 +1,25 @@
+.content {
+    display: grid;
+    justify-items: center;
+    gap: 24px;
+
+    &__title {
+        text-align: center;
+        @include large-title;
+    }
+
+    &__btn {
+        max-width: 400px;
+        width: 100%;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            max-width: none;
+        }
+    }
+
+    &__text {
+        text-align: center;
+        @include body;
+    }
+}

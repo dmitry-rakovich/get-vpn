@@ -1,5 +1,9 @@
 @import "./config/reset.scss";
+@import "./config/fonts.scss";
 @import "./config/global.scss";
 @import "./config/mixins.scss";
+
+@import "./components/buttons.scss";
+@import "./components/modal.scss";
 
 @import "./page.scss";

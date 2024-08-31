@@ -1,11 +1,13 @@
 :root {
     --color-blue: #3177f2;
     --color-orange: #ff5d17;
+    --color-orange-hover: #ff8317;
     --color-black: #2b2b2b;
     --color-grey: #646464;
+    --color-grey-light: #f8f8f8;
     --color-white: #fff;
 
-    --default-font-family: 'Inter', sans-serif;
+    --default-font-family: 'Poppins', sans-serif;
 
     --font-weight-regular: 400;
     --font-weight-medium: 500;
@@ -24,4 +26,12 @@
     --line-height-32: 32px;
     --line-height-34: 34px;
     --line-height-46: 46px;
+}
+
+.color-blue {
+    color: var(--color-blue);
+}
+
+.color-orange {
+    color: var(--color-orange);
 }
