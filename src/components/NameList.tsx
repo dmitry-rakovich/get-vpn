@@ -1,3 +1,6 @@
+import Image from 'next/image'
+
+
 type Props = {
     names: string[],
     onNameChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
@@ -16,6 +19,7 @@ export default function NameList({ names, onNameChange }: Props) {
                         onChange={onNameChange}
                         required
                     />
+                    <div className="form__radio"></div>
                     <span>{name}</span>
                 </label>
             ))}

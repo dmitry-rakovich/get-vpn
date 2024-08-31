@@ -24,9 +24,25 @@
         @include subtitle;
 
         input {
+            display: none;
             width: 24px;
             height: 24px;
-            accent-color: var(--color-orange);
+            &:checked + .form__radio {
+                display: block;
+            }
+            
+            &:not(:checked) {
+                display: block;
+            }
         }
+    }
+
+    &__radio {
+        display: none;
+        width: 24px;
+        height: 24px;
+        background-image: url('/checked.svg');
+        background-position: center;
+        background-repeat: no-repeat;
     }
 }

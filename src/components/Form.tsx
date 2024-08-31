@@ -3,12 +3,15 @@ import { useEffect, useState } from 'react';
 import NameList from './NameList';
 import { getNames } from '@/utils';
 import Modal from './Modal';
+import useModalScroll from '@/hooks';
 
 export default function Form() {
 
     const [names, setNames] = useState<string[]>([]);
     const [selectedName, setSelectedName] = useState<string>('');
     const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+
+    useModalScroll(isModalOpen);
 
     const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setSelectedName(e.target.value);
@@ -18,8 +21,6 @@ export default function Form() {
         e.preventDefault();
         if (selectedName) {
             setIsModalOpen(true);
-            console.log(selectedName);
-
         }
     };
 
